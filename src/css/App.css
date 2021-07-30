@@ -1,3 +1,11 @@
+.btn {
+  box-shadow: none !important;
+  padding: 0 !important;
+  outline: none !important;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
 .container-global-login {
   height: 100vh;
 }
@@ -48,6 +56,7 @@
 
 .btn-facebook {
   background: #3b5998 !important;
+  outline: none !important;
   color: #ffffff !important;
 }
 
@@ -58,11 +67,13 @@
 
 .btn-apple {
   background: #000000 !important;
+  outline: none !important;
   color: #ffffff !important;
 }
 
 .btn-apple:hover {
   background: #333333 !important;
+  outline: none !important;
   color: #ffffff !important;
 }
 
@@ -70,11 +81,13 @@
   border: 2px solid #616467 !important;
   background: #ffffff !important;
   color: #616467 !important;
+  outline: none !important;
 }
 
 .btn-normal:hover {
   background: #616467 !important;
   color: #ffffff !important;
+
 }
 
 .divider {
@@ -145,6 +158,7 @@ form-check-input:focus {}
   height: 48px;
   font-weight: 700 !important;
   border-radius: 50px !important;
+  outline: none !important;
   background-color: #15883e !important;
   border-color: #15883e !important;
 }
@@ -183,11 +197,11 @@ p {
 
 
 li {
-  width: 235px;
+  width: 241px;
   height: 40px;
   padding-left: 8px;
   padding-right: 8px;
-  margin-right: 19px !important;
+
 
 }
 
@@ -201,17 +215,28 @@ a {
 
   display: flex !important;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.7;
   color: #ffffff !important;
   background: #000000 !important;
   display: flex !important;
   border-color: transparent !important;
-  padding: 0px 16px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+
   border-radius: 3px !important;
   width: 100%;
   height: 40px;
+  border: none !important;
   margin-right: 0px !important;
 
+}
+
+.btn-sidebar:focus {
+  background: #282828 !important;
+  box-shadow: none !important;
+  opacity: 1;
 }
 
 .btn-sidebar:hover {
@@ -230,7 +255,7 @@ a {
 
 .content-sidebar-logo {
   margin-top: 24px !important;
-  margin-bottom: 18px !important;
+  margin-bottom: 24px !important;
   padding-right: 24px !important;
   padding-left: 24px !important;
 }
@@ -300,18 +325,290 @@ a {
   display: flex;
   bottom: 0px;
   position: absolute;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 90px;
-  background: #181818;
+  background: rgba( 24, 24, 24, 0.85 );
+
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+
+
+
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
 }
 
-.reproductorDiv {}
+.img-reproductor {
+  height: 56px;
+  width: 56px;
+
+
+}
+
+.left-div-reproductor {
+  height: 56px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.config-repro {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btn-speaker {
+  display: flex;
+  width: 32px !important;
+  height: 32px !important;
+  border: none !important;
+  background: transparent !important;
+  padding-bottom: 3px !important;
+}
+
+.btn-icons {
+  width: 32px;
+  height: 32px;
+  border: none !important;
+  background: transparent !important;
+}
+
+.btn-volumen {
+  display: flex;
+  width: 125px;
+  height: 32px;
+  justify-content: center;
+  border: none !important;
+  background: transparent !important;
+}
+
+.alinicion {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.reproductorDiv {
+  max-width: 722px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.datos-song {
+  height: 32px;
+  margin-right: 14px;
+  margin-left: 14px;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.nombres-song {
+  height: 16px;
+  color: #fff;
+  text-align: left;
+  font-size: small;
+}
+
+.nombre-albun {
+  height: 14px;
+  color: #fff;
+  text-align: left;
+  font-size: small;
+}
+
+.div-like {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-like {
+  width: 16px;
+  height: 16px;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.div-pantalla {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-pantalla {
+  width: 16px;
+  border: none !important;
+  height: 16px;
+  background-color: transparent !important;
+
+}
+
+.btn-div-reproductor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.btn-icons-reproductor {
+  background: transparent !important;
+  border: none !important;
+  display: flex !important;
+  width: 32px !important;
+  height: 32px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0px !important;
+
+}
+
+#btn-icons-animate {
+  animation: icons-reproduc 0.4s linear
+}
+
+@keyframes icons-reproduc {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.btn-play-stop {
+  background: transparent !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50px !important;
+  background: white !important;
+  transition: 0.2s linear !important;
+}
+
+.btn-play-stop:hover {
+  transform: scale(1.08);
+
+}
+
+.btn-div-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.div-input {
+  height: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.input-range {
+  -webkit-appearance: none !important;
+  height: 4px;
+  position: relative;
+  width: 100%;
+  background-color: #535353 !important;
+  border-radius: 10px !important;
+  outline: none !important
+}
+
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #ffffff !important;
+  height: 16px;
+  width: 16px;
+
+  border-radius: 100% !important;
+}
+
+
+
+.input-range-volumen {
+  -webkit-appearance: none !important;
+  height: 4px;
+  position: relative;
+  width: 93px !important;
+  background-color: #535353 !important;
+  border-radius: 10px !important;
+  outline: none !important
+}
+
+.input-range-volumen::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #ffffff !important;
+  height: 12px;
+  width: 12px;
+  border-radius: 100% !important;
+}
+
+.btn-div-input {
+  width: 100%
+}
+
+
+
+
+.data-pogreso-inicio {
+  color: rgb(179, 179, 179);
+
+  min-width: 40px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+  width: 40px;
+  height: 16px;
+}
+
+.data-pogreso-fin {
+  color: rgb(179, 179, 179);
+
+  min-width: 40px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+  width: 40px;
+  height: 16px;
+
+
+}
 
 .no_scroll {
   position: fixed;
   overflow-y: scroll
 }
+
+.rotado {
+  transform: rotate(180deg) !important;
+}
+
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
@@ -331,6 +628,8 @@ a {
   align-items: center;
 
 }
+
+
 
 .btn-left {
   padding: 0 !important;
@@ -370,6 +669,9 @@ a {
 }
 
 .btn-premiun {
+  box-shadow: none !important;
+
+  outline: none !important;
   width: 140px !important;
   border-radius: 100px !important;
   background: #000307 !important;
@@ -382,7 +684,7 @@ a {
   align-items: center !important;
   letter-spacing: 1.76px;
   height: 36px;
-  margin-right: 32px;
+  margin-right: 16px;
   transition: 0.2s linear !important;
 }
 
@@ -391,12 +693,18 @@ a {
   border-radius: 100px !important;
   background: #000307 !important;
   color: #fff !important;
+  margin-left: 16px;
   padding: 2px !important;
   border: 0 !important;
   display: flex !important;
   justify-content: space-between !important;
+  outline: none !important;
   height: 32px;
 
+}
+
+.btn-perfil:hover {
+  background: #1b1b1b !important;
 }
 
 .letra-perfil {

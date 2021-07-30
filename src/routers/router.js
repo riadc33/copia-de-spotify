@@ -23,9 +23,6 @@ function Rutas(props) {
                 <Switch>
                     <Route path="/Login" component={() => <Login />} />
                     <Route path="/Dashboard" component={() => <Dashboard />} />
-
-
-
                     <Route path="*" component={() => <Redirect to="/Login" />} />
                 </Switch>
             </Router>

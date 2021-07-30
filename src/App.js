@@ -76,11 +76,7 @@ function App() {
           </div>
           <div>
             <Form className="form-login">
-              {/* {this.state.errorMsg !== "" &&
-            <Alert color="danger" isOpen={this.state.visible} toggle={this.onDismiss.bind(this)} >
-              {this.state.errorMsg}
-            </Alert>
-          } */}
+
               <FormGroup>
                 <Label style={{ marginBottom: "5px" }}>
                   <b>Correo electrónico o nombre de usuario</b>
