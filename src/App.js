@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="container-global-login">
       <div className="head-login">
-        <img className="logo-login" src={logo} />
+        <p style={{ fontSize: 30, fontStyle: 'italic' }}>Aviones</p>
       </div>
       <div className="body-login">
         <div className="content-body-login">
@@ -121,16 +121,8 @@ function App() {
                 </FormGroup>
               </div>
             </Form>
-            <div className="divider"></div>
-            <div className="">
-              <p>¿No tienes cuenta?</p>
-              <Button
-                className="button-login btn-normal "
-                style={{ fontWeight: 500 }}
-              >
-                <b>REGISTRATE EN SPOTIFY</b>
-              </Button>
-            </div>
+
+
           </div>
         </div>
       </div>
